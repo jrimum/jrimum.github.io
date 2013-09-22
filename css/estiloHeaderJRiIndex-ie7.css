@@ -1,0 +1,12 @@
+/*
+====================================================
+Estilo exclusivo para IE7
+====================================================
+*/
+#cabecalho_menu_right {
+	margin-top: 5px;
+}
+ 
+#cabecalho_menu_right ul  {
+	margin: 10px 20px 20px 0;
+}

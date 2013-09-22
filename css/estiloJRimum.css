@@ -1,0 +1,342 @@
+/* 
+====================================
+INTRU������ES DE ���MBITO GERAL 
+====================================
+*/
+
+* {
+	color: #226622;
+	font-family: verdana, arial, helvetica, sans-Serif;
+	font-size: 12px;
+}
+
+body {
+	margin: 0px;
+	padding: 0px;
+}
+
+
+pre.sourceJava {
+    padding: 20px;
+	margin: 4px 0 25px 0;
+    font-family: courier new, monospace;
+    font-size: 12px;
+    border: 1px solid #080;
+	border-color: black;
+    background-color: #F0F0F0;
+    color: black;
+	text-align: justify;    
+}
+
+/* 
+====================================
+CABE���ALHO 
+====================================
+*/
+#cabecalho  {;
+	min-width: 760px;
+}
+
+#cabecalho a {;
+	text-decoration: none;
+}
+/* ==================================== TOPO ====================================  */
+
+
+/* 
+==================================== 
+LOGO 
+==================================== 
+*/
+
+#cabecalho_logo {
+	background: url(/BckgJRiLogoSmokeGradiente.png) repeat-x;
+}
+#cabecalho_logo img {
+	border: none;
+}
+#cabecalho_logo a {
+	border: none;
+}
+
+/* ==================================== CONTE���DO ==================================== */
+
+
+.statusDev{
+	color: #A3C2A3;	
+}
+
+.palavraChave{
+	color: #E64D00;	
+}
+
+
+#conteudo {
+	min-height: 400px; 
+	min-width: 760px;
+}
+
+#conteudo_cardapio {
+	float: left;
+	padding: 0 0 0 10px;
+	width: 240px;
+}
+
+#conteudo_cardapio  a{
+	text-decoration: none;
+}
+
+
+.cardapio_top {
+	background: url("/img/estilo/cardapio_top.png") no-repeat top;
+}
+
+.cardapio_top_2 {
+	background: url("/img/estilo/cardapio_top_2.png") no-repeat top;
+}
+
+.cardapio_top, .cardapio_top_2 {
+	height: 60px;
+	width: 210px;
+}
+
+.cardapio_top_titulo{
+	padding-left: 19px;
+	padding-top: 22px;
+	font-weight: bold;
+	color: #164116;
+}
+
+.cardapio_top_titulo_2{
+	padding-left: 19px;
+	padding-top: 22px;
+	font-weight: bold;
+	color: #0D0D0D;	
+}
+
+.cardapio_middle {
+	background: url("/img/estilo/cardapio_middle.png") repeat-y;
+}
+.cardapio_middle_2 {
+	background: url("/img/estilo/cardapio_middle_2.png") repeat-y;
+}
+
+
+.cardapio_middle, .cardapio_middle_2 {
+	width: 210px;
+}
+
+.cardapio_middle ul *{
+	color: #164116;
+}
+
+.cardapio_middle_2 ul *{
+	color: #0D0D0D;
+}
+.cardapio_middle ul, .cardapio_middle_2 ul{
+	margin: 0px;
+	padding-left: 20px;
+	list-style-type: none;
+}
+
+.cardapio_middle ul li.selecionado a, .cardapio_middle_2 ul li.selecionado a{
+	font-weight: bold;
+}
+
+.cardapio_middle ul li a, .cardapio_middle_2 ul li a{
+	background: url("/img/estilo/cardapio_opcao.gif") no-repeat left;
+	padding: 14px;
+}
+
+.cardapio_middle ul li a:hover, .cardapio_middle_2 ul li a:hover  {
+	background: none;
+	color: #FF9900;
+}
+
+.cardapio_bottom {
+	background: url("/img/estilo/cardapio_bottom.png") no-repeat bottom;
+}
+
+.cardapio_bottom_2 {
+	background: url("/img/estilo/cardapio_bottom_2.png") no-repeat bottom;
+}
+
+.cardapio_bottom, .cardapio_bottom_2 {
+	height: 60px;
+	width: 210px;
+}
+
+.cardapio_middle ul li a.cardapioDoc:hover{
+background: url("/img/estilo/page_white_go.png") no-repeat right;
+padding-right: 23px;
+}
+
+.cardapio_middle ul li a.cardapioGrupo:hover{
+background: url("/img/estilo/comments.png") no-repeat right;
+padding-right: 23px;
+}
+
+.cardapio_middle ul li a.cardapioSuporte:hover{
+background: url("/img/estilo/help.png") no-repeat right;
+padding-right: 23px;
+}
+
+.cardapio_middle ul li a.cardapioInfo:hover{
+background: url("/img/estilo/page_white_gear.png") no-repeat right;
+padding-right: 23px;
+}
+
+.cardapio_middle ul li a.cardapioNews:hover{
+	background: url(/img/estilo/new.gif) no-repeat right;
+	padding-right: 33px;
+}
+
+.cardapio_middle_2 ul li a.github:hover{
+background: url("/img/octocat_mini.png") no-repeat right;
+padding-right: 23px;
+}
+
+#conteudo_topico {
+	min-width: 400px;		
+	overflow: auto;
+}
+
+.topico{
+	margin-top: 5px;
+}
+
+.topico_titulo {
+	height: 40px;
+}
+
+.topico_titulo_texto{
+	font-size: 14pt;
+	margin: 6px 0px 0px 10px;
+	font-family: "Arial black";
+	color: #226622;
+}
+
+.topico_titulo_left {
+	background: url("/img/estilo/topico_left.png") no-repeat;
+	float: left;
+	width: 10px;
+}
+
+.topico_titulo_middle {
+	background: url("/img/estilo/topico_middle.png") repeat-x;
+	float: left;
+	width: 95%;
+}
+
+.topico_titulo_right {
+	background: url("/img/estilo/topico_right.png") no-repeat bottom;
+	float: left;
+	width: 10px;
+}
+
+.topico_titulo_left, .topico_titulo_middle, .topico_titulo_right  {
+	height: 40px;
+}
+
+.topico_noticia {
+	padding: 10px 0 20px 8px;
+	text-align: justify;
+	width: 95%;
+}
+
+.topico_noticia p{
+	margin: 0;
+	padding: 0 0 0 0;
+}
+
+/*
+.topico_titulo_texto {
+	color: #663300;
+}
+*/
+.topico_noticia p, .topico_noticia ul, .topico_noticia ul li {
+	color: #102E10;
+}
+
+/* 
+	Tabelas
+*/
+table {
+	border-collapse: collapse;
+	border: 1px solid #226622;
+	margin-bottom: 20px;
+}
+
+caption {
+	text-align: center;
+	font-weight: bold;
+	font-size: 18px;
+	background: transparent;
+	padding:6px 4px 8px 0px;
+	text-transform: uppercase;
+}
+
+td, th {
+	border: 1px dotted #226622;
+	padding: .4em;
+}
+
+thead th, tfoot th {
+	font-weight: bold;
+	font-size: 11px;
+	border: 1px solid #226622;
+	text-align: left;
+	padding-top: 3px;
+}
+
+tbody th, tbody td {
+
+	text-align: left;
+}
+/*
+tbody tr:hover {
+	background: #FFF9E5;
+}
+*/
+
+/* =============== Experimento ======== */
+
+span.node{
+	height:200px;
+	vertical-align:middle;
+	background: transparent;
+	margin: 0.5ex 0.3ex 0.5ex 0.3ex;
+	padding: 0 0.5ex 0 0.5ex;
+	border-width: 0.1em;
+	border-color: #E0E0E0 #909090 #909090 #E0E0E0;
+	border-style: solid;
+}
+span.node img{
+	vertical-align:middle;
+}
+
+span.node:hover,span.node:active {
+	background: #FFFFFF;
+	background: url("/img/estilo/cardapio_middle_2.png");
+	font-weight: bold;
+	color: #000066;
+	border-color: #000 #fafafa #fafafa #000;
+}
+
+img.normal {
+	border: 1px solid silver;
+}
+
+span.enfase{
+	font-style: italic;	
+}
+
+a.github {
+	padding-left: 1.5em;
+	background: url(/img/octocat_mini.png) no-repeat left;
+}
+
+.subtitulo-alert {
+	font-size: 1.2em;
+	color: #E64D00;
+}
