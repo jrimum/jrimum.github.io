@@ -1,0 +1,192 @@
+section#top {
+	min-width: 760px;
+}
+
+section#top a {
+	text-decoration: none;
+}
+
+section#top nav {
+	background: url(/img/estilo/top_menu.png) repeat-x;
+	height: 45px;
+}
+
+/*MENU LEFT*/
+ul#top-menu-left, ul#top-menu-left ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	font-weight: bold;
+}
+
+ul#top-menu-left li  {
+	padding: 12px 6px 6px 6px;
+	margin: 4px 2px 0 0;
+}
+
+ul#top-menu-left li a:hover, 
+ul#top-menu-left li a:link:hover, 
+ul#top-menu-left li a:visited:hover
+{
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+ul#top-menu-left ul {
+	padding: 5px 0 7px 0;
+	
+	border-left: 1px solid #CCC;
+	border-bottom: 1px solid #333;
+	border-right: 1px solid #CCC;
+	border-top: 1px solid #CCC;
+}
+
+ul#top-menu-left ul li {
+	margin: 0 0 0 15px;
+	width: 150px;
+}
+
+ul#top-menu-left ul li a {
+	padding: 0 0 2px 25px;
+	background: url(/img/estilo/brick.png) no-repeat;
+}
+
+ul#top-menu-left li, ul#top-menu-left ul li {
+	float: left;
+	position: relative;
+	cursor: pointer;
+}
+
+ul#top-menu-left li ul {
+	display: none;
+	position: absolute; 
+	top: 0;
+	left: 0;
+	background: url(/img/estilo/fundoBarr.png) repeat-x #FFF;
+}
+
+ul#top-menu-left li > ul {
+	top: 38px;
+	left: -1px;
+}
+
+ul#top-menu-left li:hover, ul#top-menu-left li.over {
+	text-decoration: none;
+}
+
+ul#top-menu-left ul li:hover a, ul#top-menu-left ul li.over a {
+	background: url(/img/estilo/brick_go.png) no-repeat;
+	text-decoration: underline;
+}
+ 
+ul#top-menu-left li.submenu:hover, ul#top-menu-left li.submenu.over {
+	padding: 11px 6px 12px 5px;
+	margin-right: 1px;
+	
+	border-top: 1px solid #CCC;
+	border-left: 1px solid #AAA;
+	border-right: 1px solid #EEE;
+	border-bottom: 1px solid #999;
+	
+	background: url(/img/estilo/menu_hover.png) repeat-x;
+}
+
+ul#top-menu-left li:hover ul, ul#top-menu-left li.over ul { 
+	display: block;
+}
+
+ul#top-menu-left li.submenu-social a {
+	padding-left: 1.4em; 
+	background-repeat: no-repeat;
+	background-position: left;
+	text-decoration: none;
+}
+
+ul#top-menu-left li.submenu-social a.news {
+	padding-left: 0;
+}
+
+ul#top-menu-left li.submenu-social a.facebook {
+	margin-left: 0.5em;
+	background-image: url(/img/facebook_ico.png);
+}
+
+ul#top-menu-left li.submenu-social a.blog {
+	background-image: url(/img/blogspot_ico.png);
+}
+
+ul#top-menu-left li.submenu-social a.twitter {
+	background-image: url(/img/twitter_ico.png);
+}
+/*FIM MENU LEFT*/
+
+/*MENU RIGHT*/
+div#top-menu-right {
+	margin-top: 8px;
+	float: right;
+}
+
+div#top-menu-right ul  {
+	margin: 6px 20px 0 0;
+}
+
+div#top-menu-right ul li  {
+	display: inline;
+	margin-left: -4px;
+}
+
+div#top-menu-right ul li a  {
+	padding: 10px 12px 13px 12px;
+	border-left: 1px solid #FFCC66;
+}
+
+div#top-menu-right ul li a.menu-border-right {
+	border-right: 1px solid #FFCC66;	
+}
+
+/*Sobrescrita de psedo-classes*/
+div#top-menu-right ul li a, 
+div#top-menu-right ul li a:link, 
+div#top-menu-right ul li a:visited
+{
+	color: #226622;
+	font-weight: bold;
+	text-decoration: none;
+	border-bottom: none;
+}
+
+div#top-menu-right ul li a:hover, 
+div#top-menu-right ul li a:link:hover, 
+div#top-menu-right ul li a:visited:hover 
+{
+	background: url(/img/estilo/menu_hover.png) repeat-x;
+	color: #226622;
+	text-decoration: none;	
+}
+/*FIM MENU RIGHT*/
+
+/*HEADER*/
+section#top header {
+	background: url(/img/BckgJRiLogoSmokeGradiente.png) repeat-x;
+}
+
+section#top header img, section#top header a {
+	border: none;
+}
+
+section#top header div {
+	padding-left: 2em;
+}
+
+section#top header h2 {
+	color: #88A172;
+	font-weight: normal; 
+	font-style: italic;
+}
+/*FIM HEADER*/
+
+.menuAtual{
+	background: url(/img/estilo/menu_hover.png) repeat-x;
+}
+
+
