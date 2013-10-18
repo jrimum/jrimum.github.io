@@ -170,15 +170,24 @@ section#top header {
 	background: url(/img/BckgJRiLogoSmokeGradiente.png) repeat-x;
 }
 
-section#top header img, section#top header a {
-	border: none;
-}
-
-section#top header div {
+section#top header hgroup {
 	padding-left: 2em;
 }
 
-section#top header h2 {
+section#top header h1 {
+	background: url(/img/JRiLogoSmokeGradiente.png) no-repeat;
+	margin: 0;
+}
+
+section#top header h1 a {
+	width: 770px;
+	height: 144px;
+	display: block;
+	text-decoration: none;
+	border: none;
+}
+
+section#top header h3 {
 	color: #88A172;
 	font-weight: normal; 
 	font-style: italic;

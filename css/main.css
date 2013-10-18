@@ -3,7 +3,6 @@
 INTRUÇÕES DE ÂMBITO GERAL 
 ====================================
 */
-
 * {
 	color: #226622;
 	font-family: verdana, arial, helvetica, sans-Serif;
@@ -15,217 +14,208 @@ body {
 	padding: 0px;
 }
 
-
 pre.sourceJava {
-    padding: 20px;
+	padding: 20px;
 	margin: 4px 0 25px 0;
-    font-family: courier new, monospace;
-    font-size: 12px;
-    border: 1px solid #080;
+	font-family: courier new, monospace;
+	font-size: 12px;
+	border: 1px solid #080;
 	border-color: black;
-    background-color: #F0F0F0;
-    color: black;
-	text-align: justify;    
+	background-color: #F0F0F0;
+	color: black;
+	text-align: justify;
 }
 
-/* ==================================== CONTEÚDO ==================================== */
-
-
-.statusDev{
-	color: #A3C2A3;	
-}
-
-.palavraChave{
-	color: #E64D00;	
-}
-
-
-#conteudo {
-	min-height: 400px; 
+/* ==================================== SIDEBAR - MENU LATERAL ==================================== */
+section#body {
+	min-height: 400px;
 	min-width: 760px;
 }
 
-#conteudo_cardapio {
+section#body aside {
 	float: left;
 	padding: 0 0 0 10px;
 	width: 240px;
 }
 
-#conteudo_cardapio  a{
+section#body aside a {
 	text-decoration: none;
 }
 
+section#body aside div.left-menu-header {
+	background: url(/img/estilo/cardapio_top.png) no-repeat top;
+}
 
-.cardapio_top {
-	background: url("/img/estilo/cardapio_top.png") no-repeat top;
+section#body aside div.left-menu-title {
+	padding-left: 19px;
+	padding-top: 22px;
+	font-weight: bold;
+	color: #164116;
 }
 
 .cardapio_top_2 {
-	background: url("/img/estilo/cardapio_top_2.png") no-repeat top;
+	background: url(/img/estilo/cardapio_top_2.png) no-repeat top;
 }
 
-.cardapio_top, .cardapio_top_2 {
+section#body aside div.left-menu-header,.cardapio_top_2 {
 	height: 60px;
 	width: 210px;
 }
 
-.cardapio_top_titulo{
+.cardapio_top_titulo_2 {
 	padding-left: 19px;
 	padding-top: 22px;
 	font-weight: bold;
-	color: #164116;
+	color: #0D0D0D;
 }
 
-.cardapio_top_titulo_2{
-	padding-left: 19px;
-	padding-top: 22px;
-	font-weight: bold;
-	color: #0D0D0D;	
+section#body aside nav {
+	background: url(/img/estilo/cardapio_middle.png) repeat-y;
 }
 
-.cardapio_middle {
-	background: url("/img/estilo/cardapio_middle.png") repeat-y;
-}
-.cardapio_middle_2 {
-	background: url("/img/estilo/cardapio_middle_2.png") repeat-y;
+section#body aside nav_2 {
+	background: url(/img/estilo/cardapio_middle_2.png) repeat-y;
 }
 
-
-.cardapio_middle, .cardapio_middle_2 {
+section#body aside nav, section#body aside nav_2 {
 	width: 210px;
 }
 
-.cardapio_middle ul *{
-	color: #164116;
-}
-
-.cardapio_middle_2 ul *{
-	color: #0D0D0D;
-}
-.cardapio_middle ul, .cardapio_middle_2 ul{
+section#body aside nav ul, section#body aside nav_2 ul {
 	margin: 0px;
 	padding-left: 20px;
 	list-style-type: none;
+	line-height: 1.8em;
 }
 
-.cardapio_middle ul li.selecionado a, .cardapio_middle_2 ul li.selecionado a{
-	font-weight: bold;
+section#body aside nav ul * {
+	color: #164116;
 }
 
-.cardapio_middle ul li a, .cardapio_middle_2 ul li a{
-	background: url("/img/estilo/cardapio_opcao.gif") no-repeat left;
+section#body aside nav_2 ul * {
+	color: #0D0D0D;
+}
+
+section#body aside nav ul li a, section#body aside nav_2 ul li a {
+	background: url(/img/estilo/cardapio_opcao.gif) no-repeat left;
 	padding: 14px;
 }
 
-.cardapio_middle ul li a:hover, .cardapio_middle_2 ul li a:hover  {
+section#body aside nav ul li.selecionado a, section#body aside nav_2 ul li.selecionado a {
+	font-weight: bold;
+}
+
+section#body aside nav ul li a:hover, section#body aside nav_2 ul li a:hover {
 	background: none;
 	color: #FF9900;
+	padding-right: 23px;
 }
 
-.cardapio_bottom {
-	background: url("/img/estilo/cardapio_bottom.png") no-repeat bottom;
+section#body aside nav ul li a.cardapioDoc:hover {
+	background: url(/img/estilo/page_white_go.png) no-repeat right;
 }
 
-.cardapio_bottom_2 {
-	background: url("/img/estilo/cardapio_bottom_2.png") no-repeat bottom;
+section#body aside nav ul li a.cardapioGrupo:hover {
+	background: url(/img/estilo/comments.png) no-repeat right;
 }
 
-.cardapio_bottom, .cardapio_bottom_2 {
-	height: 60px;
-	width: 210px;
+section#body aside nav ul li a.cardapioSuporte:hover {
+	background: url(/img/estilo/help.png) no-repeat right;
 }
 
-.cardapio_middle ul li a.cardapioDoc:hover{
-background: url("/img/estilo/page_white_go.png") no-repeat right;
-padding-right: 23px;
+section#body aside nav ul li a.cardapioInfo:hover {
+	background: url(/img/estilo/page_white_gear.png) no-repeat right;
 }
 
-.cardapio_middle ul li a.cardapioGrupo:hover{
-background: url("/img/estilo/comments.png") no-repeat right;
-padding-right: 23px;
-}
-
-.cardapio_middle ul li a.cardapioSuporte:hover{
-background: url("/img/estilo/help.png") no-repeat right;
-padding-right: 23px;
-}
-
-.cardapio_middle ul li a.cardapioInfo:hover{
-background: url("/img/estilo/page_white_gear.png") no-repeat right;
-padding-right: 23px;
-}
-
-.cardapio_middle ul li a.cardapioNews:hover{
+section#body aside nav ul li a.cardapioNews:hover {
 	background: url(/img/estilo/new.gif) no-repeat right;
 	padding-right: 33px;
 }
 
-.cardapio_middle_2 ul li a.github:hover{
-background: url("/img/octocat_mini.png") no-repeat right;
-padding-right: 23px;
+section#body aside nav_2 ul li a.github:hover {
+	background: url(/img/octocat_mini.png) no-repeat right;
 }
 
-#conteudo_topico {
-	min-width: 400px;		
+section#body aside div.left-menu-bottom {
+	background: url(/img/estilo/cardapio_bottom.png) no-repeat bottom;
+}
+
+.cardapio_bottom_2 {
+	background: url(/img/estilo/cardapio_bottom_2.png) no-repeat bottom;
+}
+
+section#body aside div.left-menu-bottom, .cardapio_bottom_2 {
+	height: 60px;
+	width: 210px;
+}
+/* ==================================== FIM SIDEBAR - MENU LATERAL ==================================== */
+
+/*===================================== CONTEÚDO ==================================*/
+section#content {
+	min-width: 400px;
 	overflow: auto;
+	padding-top: 5px;
 }
 
-.topico{
-	margin-top: 5px;
-}
-
-.topico_titulo {
+section#content header {
 	height: 40px;
 }
 
-.topico_titulo_texto{
+section#content header div.title-left {
+	background: url(/img/estilo/topico_left.png) no-repeat;
+	float: left;
+	width: 10px;
+}
+
+section#content header div.title-middle {
+	background: url(/img/estilo/topico_middle.png) repeat-x;
+	float: left;
+	width: 95%;
+}
+
+section#content header div.title-right {
+	background: url(/img/estilo/topico_right.png) no-repeat bottom;
+	float: left;
+	width: 10px;
+}
+
+section#content header h1 {
 	font-size: 14pt;
 	margin: 6px 0px 0px 10px;
-	font-family: "Arial black";
+	font-family: Arial black;
 	color: #226622;
 }
 
-.topico_titulo_left {
-	background: url("/img/estilo/topico_left.png") no-repeat;
-	float: left;
-	width: 10px;
-}
-
-.topico_titulo_middle {
-	background: url("/img/estilo/topico_middle.png") repeat-x;
-	float: left;
-	width: 95%;
-}
-
-.topico_titulo_right {
-	background: url("/img/estilo/topico_right.png") no-repeat bottom;
-	float: left;
-	width: 10px;
-}
-
-.topico_titulo_left, .topico_titulo_middle, .topico_titulo_right  {
+section#content header div.title-left, section#content header div.title-middle, section#content header div.title-right {
 	height: 40px;
 }
 
-.topico_noticia {
+section#content article {
 	padding: 10px 0 20px 8px;
 	text-align: justify;
 	width: 95%;
+	line-height: 1.5em;
 }
 
-.topico_noticia p{
+section#content article p {
 	margin: 0;
 	padding: 0 0 0 0;
 }
 
-/*
-.topico_titulo_texto {
-	color: #663300;
-}
-*/
-.topico_noticia p, .topico_noticia ul, .topico_noticia ul li {
+section#content article p, section#content article ul, section#content article ul li {
 	color: #102E10;
 }
+/*===================================== FIM CONTEÚDO ===============================*/
+
+.statusDev {
+	color: #A3C2A3;
+}
+
+.palavraChave {
+	color: #E64D00;
+}
+
+
 
 /* 
 	Tabelas
@@ -241,16 +231,16 @@ caption {
 	font-weight: bold;
 	font-size: 18px;
 	background: transparent;
-	padding:6px 4px 8px 0px;
+	padding: 6px 4px 8px 0px;
 	text-transform: uppercase;
 }
 
-td, th {
+td,th {
 	border: 1px dotted #226622;
 	padding: .4em;
 }
 
-thead th, tfoot th {
+thead th,tfoot th {
 	font-weight: bold;
 	font-size: 11px;
 	border: 1px solid #226622;
@@ -258,8 +248,7 @@ thead th, tfoot th {
 	padding-top: 3px;
 }
 
-tbody th, tbody td {
-
+tbody th,tbody td {
 	text-align: left;
 }
 /*
@@ -269,10 +258,9 @@ tbody tr:hover {
 */
 
 /* =============== Experimento ======== */
-
-span.node{
-	height:200px;
-	vertical-align:middle;
+span.node {
+	height: 200px;
+	vertical-align: middle;
 	background: transparent;
 	margin: 0.5ex 0.3ex 0.5ex 0.3ex;
 	padding: 0 0.5ex 0 0.5ex;
@@ -280,13 +268,14 @@ span.node{
 	border-color: #E0E0E0 #909090 #909090 #E0E0E0;
 	border-style: solid;
 }
-span.node img{
-	vertical-align:middle;
+
+span.node img {
+	vertical-align: middle;
 }
 
 span.node:hover,span.node:active {
 	background: #FFFFFF;
-	background: url("/img/estilo/cardapio_middle_2.png");
+	background: url(/img/estilo/cardapio_middle_2.png);
 	font-weight: bold;
 	color: #000066;
 	border-color: #000 #fafafa #fafafa #000;
@@ -296,8 +285,8 @@ img.normal {
 	border: 1px solid silver;
 }
 
-span.enfase{
-	font-style: italic;	
+span.enfase {
+	font-style: italic;
 }
 
 a.github {

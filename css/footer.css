@@ -1,10 +1,4 @@
-/* 
-===============================================================
----> RODAP��� 
-===============================================================
-*/
- 
-#rodape {
+footer {
 	background: url(/img/estilo/top_menu.png) repeat-x;	
 	clear: both;
 	font-size: x-small;
@@ -12,7 +6,7 @@
 	min-width: 760px;
 }
 
-#rodape p {
+footer p {
 	
 	color: #226622;
 	font-family: verdana, arial, helvetica, sans-Serif;

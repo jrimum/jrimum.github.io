@@ -43,53 +43,58 @@
 		</nav>
 		
 		<header>
-			<a href="/"><img src="/img/JRiLogoSmokeGradiente.png" alt="Projeto JRimum" title="Projeto JRimum" /></a>
-			<div>
-				<h1>Mais do que Beans, ABÓBORAS!</h1>
-				<h2>Porque software reusável e de qualidade não se constrói somente com feijão.</h2>
-			</div>
+			<h1><a href="/" title="Projeto JRimum"></a></h1>
+			<hgroup>
+				<h2>Mais do que Beans, ABÓBORAS!</h2>
+				<h3>Porque software reusável e de qualidade não se constrói somente com feijão.</h3>
+			</hgroup>
 		</header>
 	</section>
 	
-	<div id="conteudo">
-		<div id="conteudo_cardapio">
-			<div class="cardapio_top">
-				<div class="cardapio_top_titulo">Sobre o projeto</div>
+	<section id="body">
+		<aside>
+			<div class="left-menu-header">
+				<div class="left-menu-title">Sobre o projeto</div>
 			</div>
-			<div class="cardapio_middle">
-				<ul style="line-height: 1.8em">
-					<li class="selecionado" title="Página atual"><a href="/"> Visão Geral </a></li>
-					<li><a href="/jrimum/wiki/Projeto/Info/Novidades" class="cardapioNews"> Novidades </a></li>
-					<li><a href="/jrimum/wiki/Projeto/Info/Documentacao" class="cardapioDoc"> Documentação </a></li>
-					<li><a href="http://groups.google.com.br/group/jrimum-community" class="cardapioGrupo"> Lista de discussão </a></li>
-					<li><a href="/jrimum/wiki/Projeto/Info/CasosDeSucesso" class="cardapioDoc"> Casos de sucesso </a></li>
-					<li><a href="/jrimum/wiki/Projeto/Info/Suporte" class="cardapioSuporte"> Suporte </a></li>
-					<li><a href="/jrimum/wiki/Projeto/Info/Desenvolvimento/Equipe" class="cardapioDoc"> Equipe </a></li>
-					<li><a href="/jrimum/wiki/Projeto/Info" class="cardapioInfo"> Mais informações </a></li>
+			<nav>
+				<ul>
+					<li class="selecionado" title="Página atual"><a href="/">Visão Geral</a></li>
+					<li><a href="/jrimum/wiki/Projeto/Info/Novidades" class="cardapioNews">Novidades</a></li>
+					<li><a href="/jrimum/wiki/Projeto/Info/Documentacao" class="cardapioDoc">Documentação</a></li>
+					<li><a href="http://groups.google.com.br/group/jrimum-community" class="cardapioGrupo">Lista de discussão</a></li>
+					<li><a href="/jrimum/wiki/Projeto/Info/CasosDeSucesso" class="cardapioDoc">Casos de sucesso</a></li>
+					<li><a href="/jrimum/wiki/Projeto/Info/Suporte" class="cardapioSuporte">Suporte</a></li>
+					<li><a href="/jrimum/wiki/Projeto/Info/Desenvolvimento/Equipe" class="cardapioDoc">Equipe</a></li>
+					<li><a href="/jrimum/wiki/Projeto/Info" class="cardapioInfo">Mais informações</a></li>
 					<li><a href="/jrimum/wiki/Projeto/Download" title="Componentes do projeto"
 						style="padding-left: 20px; background: url(/img/estilo/download.png) no-repeat left;">Download <br /> <img alt="Bopepo"
 							src="/img/JRiLego_Small.png" style="margin-top: 0.5em; border: none;" />
 					</a></li>
 				</ul>
-			</div>
-			<div class="cardapio_bottom"></div>
+			</nav>
+			
+			<div class="left-menu-bottom"></div>
+			
 			<iframe
 				src="//www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Fjrimum&amp;width=200&amp;height=710&amp;colorscheme=light&amp;show_faces=true&amp;border_color=white&amp;stream=false&amp;header=false"
 				scrolling="no" frameborder="0" style="border: none; overflow: hidden; width: 200px; height: 710px;" allowtransparency="true"></iframe>
-		</div>
-		<div id="conteudo_topico">
-			<div class="topico">
-				<div class="topico_titulo">
-					<div class="topico_titulo_left"></div>
-					<div class="topico_titulo_middle">
-						<h1 class="topico_titulo_texto">{{ page.topico }}</h1>
-					</div>
-					<div class="topico_titulo_right"></div>
+		</aside>
+		
+		<section id="content">
+			<header>
+				<div class="title-left"></div>
+				<div class="title-middle">
+					<h1>{{ page.topico }}</h1>
 				</div>
-				{{ content }}
-			</div>
-		</div>
-	</div>
-	{% include footer.html %} {% include javascript.html %}
+				<div class="title-right"></div>
+			</header>
+			<article>
+			{{ content }}
+			</article>
+		</section>
+	</section>
+	
+	{% include footer.html %}
+	{% include javascript.html %}
 </body>
 </html>
