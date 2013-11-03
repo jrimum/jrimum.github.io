@@ -1,15 +1,14 @@
-#top-panel {
+td#top-panel {
 	height: 45px;
-	background: url(http://jrimum.github.io/img/estilo/top_menu.png)
-		repeat-x !important 	;
+	background: url(http://jrimum.github.io/img/estilo/top_menu.png) repeat-x !important;
 }
-#top-panel td a{
+td#top-panel td a{
 	background: url(http://jrimum.github.io/img/pumpkin-16x16.png) 123px 0px no-repeat !important;
 }
-#main-table {
+table#main-table {
 	background-image: url(http://jrimum.github.io/img/jri-jenkins.png) !important;
 }
-#footer {
+td#footer {
 	height: 45px; 
 	background: url(http://jrimum.github.io/img/estilo/top_menu.png) repeat-x;
 }
