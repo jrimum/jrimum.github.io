@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="pt-BR" dir="ltr">
+
+<head>
+<meta charset="UTF-8" />
+<meta name="robots" content="index,follow,noodp,noydir" />
+<meta name="description" content="Projeto Open Source focado no desenvolvimento de componentes de software para o domínio de negócios do Brasil" />
+
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+
+{% include css.html %}
+<link rel="stylesheet" type="text/css" href="/css/pages-content.css" />
+
+<title>{{ page.title }}</title>
+</head>
+
+<body>
+	<section id="top">
+		<nav>
+			<div id="top-menu-right">
+				<ul>
+					<li title="Página atual"><a href="" class="{{ page.menu-atual-projeto }}">Projeto</a></li>
+					<li title="Página atual"><a href="" class="{{ page.menu-atual-bopepo }}">Bopepo</a></li>
+					<li title="Página atual"><a href="" class="{{ page.menu-atual-texgit }}">Texgit</a></li>
+					<li title="Página atual"><a href="" class="{{ page.menu-atual-domkee }}">Domkee</a></li>
+					<li title="Página atual"><a href="" class="{{ page.menu-atual-utilix }}">Utilix</a></li>
+					<li title="Página atual"><a href="" class="{{ page.menu-atual-vallia }}">Vallia</a></li>
+				</ul>
+			</div>
+			<ul id="top-menu-left">
+				<li><a href="/">Home</a></li>
+				<li><a href="/">Download</a></li>
+				<li><a href="/">GitHub</a></li>
+				{% include top-menu-social.html %}
+			</ul>
+		</nav>
+		
+		<header>
+			<h1><a href="/" title="Projeto JRimum"></a></h1>
+		</header>
+	</section>
+	
+	<section id="body">
+		<section id="content">
+			<header>
+				<div class="title-left"></div>
+				<div class="title-middle">
+					<h1>{{ page.topico }}</h1>
+				</div>
+				<div class="title-right"></div>
+			</header>
+			<article>
+			{{ content }}
+			</article>
+		</section>
+	</section>
+	
+	{% include footer.html %}
+	{% include javascript.html %}
+</body>
+</html>

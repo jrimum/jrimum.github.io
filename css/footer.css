@@ -1,4 +1,5 @@
 footer {
+	font-family: Verdana, Arial, Helvetica, Sans-Serif;
 	background: url(/img/estilo/top_menu.png) repeat-x;	
 	clear: both;
 	font-size: x-small;
@@ -7,9 +8,20 @@ footer {
 }
 
 footer p {
-	
+	float: left;
 	color: #226622;
-	font-family: verdana, arial, helvetica, sans-Serif;
 	font-size: 12px;
-	padding: 14px 0 0 14px;
+	padding: 5px 0 0 14px;
+}
+
+footer small {
+	float: right;
+	padding: 15px 15px 0 0;
+}
+
+footer small, footer small a {
+	color: #F0F0F0;
+	font-style: italic;
+	font-size: 1em;
+	text-decoration: none;
 }

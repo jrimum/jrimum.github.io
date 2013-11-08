@@ -1,0 +1,56 @@
+/*===================================== CONTEÚDO ==================================*/
+section#content {
+	min-width: 400px;
+	overflow: auto;
+	padding-top: 5px;
+}
+
+section#content header {
+	height: 40px;
+}
+
+section#content header div.title-left {
+	background: url(/img/estilo/topico_left.png) no-repeat;
+	float: left;
+	width: 10px;
+}
+
+section#content header div.title-middle {
+	background: url(/img/estilo/topico_middle.png) repeat-x;
+	float: left;
+	width: 95%;
+}
+
+section#content header div.title-right {
+	background: url(/img/estilo/topico_right.png) no-repeat bottom;
+	float: left;
+	width: 10px;
+}
+
+section#content header h1 {
+	font-size: 14pt;
+	margin: 6px 0px 0px 10px;
+	font-family: Arial black;
+	color: #226622;
+}
+
+section#content header div.title-left, section#content header div.title-middle, section#content header div.title-right {
+	height: 40px;
+}
+
+section#content article {
+	padding: 10px 0 20px 8px;
+	text-align: justify;
+	width: 95%;
+	line-height: 1.5em;
+}
+
+section#content article p {
+	margin: 0;
+	padding: 0 0 0 0;
+}
+
+section#content article p, section#content article ul, section#content article ul li {
+	color: #102E10;
+}
+/*===================================== FIM CONTEÚDO ===============================*/

@@ -10,6 +10,8 @@
 <link rel="icon" href="/favicon.ico" type="image/x-icon" />
 
 {% include css.html %}
+<link rel="stylesheet" type="text/css" href="/css/sidebar.css" />
+<link rel="stylesheet" type="text/css" href="/css/index-content.css" />
 
 <title>{{ page.title }}</title>
 </head>
@@ -23,7 +25,7 @@
 				</ul>
 			</div>
 			<ul id="top-menu-left">
-				<li><a href="/jrimum/wiki/Projeto">Projeto</a></li>
+				<li><a href="/jrimum">Projeto</a></li>
 				<li class="submenu">Componentes
 					<ul>
 						<li><a href="/bopepo">Bopepo</a></li>
@@ -33,10 +35,7 @@
 						<li><a href="https://github.com/jrimum/vallia">Vallia</a></li>
 					</ul>
 				</li>
-				<li><a href="/jrimum/wiki/Projeto/Info/Novidades">Novidades</a></li>
-				<li class="top-menu-social"><a href="http://www.facebook.com/jrimum" target="_blank" class="facebook"></a></li>
-				<li class="top-menu-social"><a href="http://www.blog.jrimum.org" target="_blank" class="blog"></a></li>
-				<li class="top-menu-social"><a href="http://twitter.com/jrimum" target="_blank" class="twitter"></a></li>
+				{% include top-menu-social.html %}
 			</ul>
 		</nav>
 		

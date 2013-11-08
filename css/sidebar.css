@@ -1,0 +1,118 @@
+/* ==================================== SIDEBAR - MENU LATERAL ==================================== */
+section#body aside {
+	float: left;
+	padding: 0 0 0 10px;
+	width: 240px;
+}
+
+section#body aside a {
+	text-decoration: none;
+}
+
+section#body aside div.left-menu-header {
+	background: url(/img/estilo/cardapio_top.png) no-repeat top;
+}
+
+section#body aside div.left-menu-title {
+	padding-left: 19px;
+	padding-top: 22px;
+	font-weight: bold;
+	color: #164116;
+}
+
+.cardapio_top_2 {
+	background: url(/img/estilo/cardapio_top_2.png) no-repeat top;
+}
+
+section#body aside div.left-menu-header,.cardapio_top_2 {
+	height: 60px;
+	width: 210px;
+}
+
+.cardapio_top_titulo_2 {
+	padding-left: 19px;
+	padding-top: 22px;
+	font-weight: bold;
+	color: #0D0D0D;
+}
+
+section#body aside nav {
+	background: url(/img/estilo/cardapio_middle.png) repeat-y;
+}
+
+section#body aside nav_2 {
+	background: url(/img/estilo/cardapio_middle_2.png) repeat-y;
+}
+
+section#body aside nav, section#body aside nav_2 {
+	width: 210px;
+}
+
+section#body aside nav ul, section#body aside nav_2 ul {
+	margin: 0px;
+	padding-left: 20px;
+	list-style-type: none;
+	line-height: 1.8em;
+}
+
+section#body aside nav ul * {
+	color: #164116;
+}
+
+section#body aside nav_2 ul * {
+	color: #0D0D0D;
+}
+
+section#body aside nav ul li a, section#body aside nav_2 ul li a {
+	background: url(/img/estilo/cardapio_opcao.gif) no-repeat left;
+	padding: 14px;
+}
+
+section#body aside nav ul li.selecionado a, section#body aside nav_2 ul li.selecionado a {
+	font-weight: bold;
+}
+
+section#body aside nav ul li a:hover, section#body aside nav_2 ul li a:hover {
+	background: none;
+	color: #FF9900;
+	padding-right: 23px;
+}
+
+section#body aside nav ul li a.cardapioDoc:hover {
+	background: url(/img/estilo/page_white_go.png) no-repeat right;
+}
+
+section#body aside nav ul li a.cardapioGrupo:hover {
+	background: url(/img/estilo/comments.png) no-repeat right;
+}
+
+section#body aside nav ul li a.cardapioSuporte:hover {
+	background: url(/img/estilo/help.png) no-repeat right;
+}
+
+section#body aside nav ul li a.cardapioInfo:hover {
+	background: url(/img/estilo/page_white_gear.png) no-repeat right;
+}
+
+section#body aside nav ul li a.cardapioNews:hover {
+	background: url(/img/estilo/new.gif) no-repeat right;
+	padding-right: 33px;
+}
+
+section#body aside nav_2 ul li a.github:hover {
+	background: url(/img/octocat_mini.png) no-repeat right;
+}
+
+section#body aside div.left-menu-bottom {
+	background: url(/img/estilo/cardapio_bottom.png) no-repeat bottom;
+}
+
+.cardapio_bottom_2 {
+	background: url(/img/estilo/cardapio_bottom_2.png) no-repeat bottom;
+}
+
+section#body aside div.left-menu-bottom, .cardapio_bottom_2 {
+	height: 60px;
+	width: 210px;
+}
+/* ==================================== FIM SIDEBAR - MENU LATERAL ==================================== */

@@ -19,6 +19,10 @@ ul#top-menu-left, ul#top-menu-left ul {
 	font-weight: bold;
 }
 
+ul#top-menu-left {
+	margin-left: 10px;
+}
+
 ul#top-menu-left li  {
 	padding: 12px 6px 6px 6px;
 	margin: 4px 2px 0 0;
@@ -42,7 +46,7 @@ ul#top-menu-left ul {
 }
 
 ul#top-menu-left ul li {
-	margin: 0 0 0 15px;
+	margin-left: 15px;
 	width: 150px;
 }
 
