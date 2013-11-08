@@ -95,27 +95,24 @@ ul#top-menu-left li:hover ul, ul#top-menu-left li.over ul {
 	display: block;
 }
 
-ul#top-menu-left li.submenu-social a {
-	padding-left: 1.4em; 
+ul#top-menu-left li.top-menu-social a {
+	width: 16px;
+	height: 15px;
+	display: block;
 	background-repeat: no-repeat;
-	background-position: left;
+	background-position: center;
 	text-decoration: none;
 }
 
-ul#top-menu-left li.submenu-social a.news {
-	padding-left: 0;
-}
-
-ul#top-menu-left li.submenu-social a.facebook {
-	margin-left: 0.5em;
+ul#top-menu-left li.top-menu-social a.facebook {
 	background-image: url(/img/facebook_ico.png);
 }
 
-ul#top-menu-left li.submenu-social a.blog {
+ul#top-menu-left li.top-menu-social a.blog {
 	background-image: url(/img/blogspot_ico.png);
 }
 
-ul#top-menu-left li.submenu-social a.twitter {
+ul#top-menu-left li.top-menu-social a.twitter {
 	background-image: url(/img/twitter_ico.png);
 }
 /*FIM MENU LEFT*/
